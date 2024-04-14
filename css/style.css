@@ -1,0 +1,427 @@
+
+.fon {
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rainbow {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.grass {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    top: 246px;
+    z-index: 1;
+}
+
+.flowers {
+    position: absolute;
+    top: 77%;
+    left: 83%;
+    z-index: 10;
+}
+
+.dog {
+    position: absolute;
+    top: 57%;
+    left: 20%;
+    z-index: 10;
+}
+
+.text-dog {
+    display: none;
+    z-index: 1000;
+}
+
+.text__info--dog {
+    position: relative;
+    top: -37px;
+    left: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.dog:hover .text-dog {
+    display: block;
+    position: relative;
+    top: -120px;
+    left: 83px;
+    z-index: 10;
+}
+
+.bees {
+    position: absolute;
+    top: 74%;
+    left: 93%;
+    z-index: 10;
+    animation: beesMove 1.5s infinite linear;
+}
+
+@keyframes beesMove {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.bees-top {
+    position: absolute;
+    top: 72%;
+    left: 90%;
+    z-index: 10;
+    animation: beesMove-reverse 1.5s infinite linear;
+}
+
+@keyframes beesMove-reverse {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(-360deg);
+    }
+    
+}
+
+.car {
+    position: absolute;
+    top: 65%;
+    left: 300px;
+    z-index: 10;
+}
+
+.car:active {
+    transform:translate(-300px,-115px) scale(0.7);
+}
+
+
+.houseOnForest {
+    position: absolute;
+    top: 32%;
+    left: 79%;
+    z-index: 10;
+}
+
+.wheel {
+    position: absolute;
+    top: 48%;
+    left: 94.2%;
+    z-index: 1000;
+    animation: wheelMove 5s infinite linear;
+}
+
+@keyframes wheelMove {
+    0% {
+        transform: skew(0);
+    }
+
+    30% {
+        transform: skew(8deg);
+    }
+    
+    70% {
+        transform: skew(-8deg);
+    }
+
+    100% {
+        transform: skew(0);
+    }
+    
+}
+
+
+.horizontalBar {
+    width: 250px;
+    position: absolute;
+    top: 37%;
+    left: 40%;
+    z-index: 10;
+}
+
+.swing {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    z-index: 10;
+    animation: swingMove 3s infinite linear;
+}
+
+@keyframes swingMove {
+    0% {
+        transform: skew(0);
+    }
+
+    30% {
+        transform: skew(4deg);
+    }
+    
+    70% {
+        transform: skew(-4deg);
+    }
+
+    100% {
+        transform: skew(0);
+    }
+}
+
+.children {
+    width: 300px;
+    position: absolute;
+    top: 40%;
+    left: 28%;
+    z-index: 10;
+}
+
+.container__sun {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    left: 83%;
+    top: 35px;
+    animation: sunMoves 10s infinite;
+}
+
+@keyframes sunMoves {
+    0%{
+        left: 83%;
+        top: 35px;
+    }
+
+    25% {
+        left: 10%;
+        top: 70px;
+    }
+
+    50% {
+        left: 40%;
+        top: 100px;
+    }
+
+    75% {
+        left: 60%;
+        top: 80px;
+    }
+
+    100% {
+        left: 83%;
+        top: 35px;
+    }
+}
+
+.sun {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    background-color: rgb(252, 235, 0);
+    z-index: 100;
+    border-radius: 50%;
+}
+
+.sunMove {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 220px;
+    z-index: 10;
+}
+
+.sunMove:hover {
+    animation: sunMove 1s infinite linear ;
+}
+
+@keyframes sunMove {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.runBoy {
+    position: relative;
+    width: 100px;
+    top: 40px;
+    left: 70%;
+    z-index: 10;
+}
+
+.runBoy:hover {
+    animation: boyMove 3s;
+}
+
+@keyframes boyMove {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.stayBoy {
+    position: relative;
+    width: 200px;
+    top: -60px;
+    left: 60%;
+    z-index: 10;
+}
+
+.text {
+    display: none;
+    z-index: 1000;
+}
+
+.text__info {
+    position: relative;
+    top: -37px;
+    left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.stayBoy:hover .text {
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: -24%;
+    z-index: 10;
+}
+
+.ball {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    z-index: 1;
+}
+
+.goal {
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    z-index: 10;
+}
+
+.goal-left {
+    position: absolute;
+    top: 66%;
+    left: 55%;
+    z-index: 10;
+}
+
+.table {
+    position: absolute;
+    top: 75%;
+    left: 2%;
+    z-index: 10;
+    transform: skew(15deg);
+    animation: tableMove 7s infinite linear;
+}
+
+@keyframes tableMove {
+    0% {
+        transform: skew(0);
+    }
+
+    30% {
+        transform: skew(15deg);
+    }
+    
+    70% {
+        transform: skew(-15deg);
+    }
+
+    100% {
+        transform: skew(0);
+    }
+}
+
+.table__text {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.beam {
+position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.face{
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.cloud-left {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    z-index: 100;
+    animation: cloud-leftMove 9s infinite alternate linear;
+}
+
+@keyframes cloud-leftMove {
+    0% {
+        left: 0;
+        top: 0;
+        transform: skew(-40deg) scale(1.2);
+    }
+
+    100% {
+        left: 70%;
+        transform: skew(30deg) scale(1.2);
+    }
+}
+
+.cloud-right {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    left: 70%;
+    z-index: 100;
+    animation: cloud-rightMove 9s infinite alternate linear;
+}
+
+@keyframes cloud-rightMove {
+    0% {
+        left: 70%;
+        top: 0;
+        transform: skew(40deg);
+    }
+
+    100% {
+        left: 0;
+        transform: skew(-30deg) scale(1.2);
+    }
+}
+
+
